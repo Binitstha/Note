@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="home">
+    <div class="note-box"></div>
+    <main>
+      <div id="alert1" class="form1">Form submited</div>
+      <div id="alert2" class="form2">Please fill the title and description</div>
+      <div class="head">My Notepad</div>
+      <div class="head-buttons">
+        <div class="buttons">
+          <button class="button-e allBtn">All</button>
+          <button class="button-e button-e-completed">Completed</button>
+          <button class="button-e button-e-incomplete">Incomplete</button>
+        </div>
+        <div>
+          <button id="Addbutton" class="button-e">ADD</button>
+        </div>
+      </div>
+    </main>
+    <div></div>
+    <div class="box" style="transform: translateX(-50%); left: 50%">
+      <form id="forms">
+        <div class="input-box">
+          <button type="reset" id="close" class="">x</button>
+          <label for="title">Title</label>
+          <input id="title" required type="text" placeholder="Title..." />
+          <label for="description">Description</label>
+          <textarea
+            required
+            id="description"
+            cols="30"
+            rows="10"
+            style="resize: none"
+            placeholder="description..."></textarea>
+          <div id="submit">
+            <button type="submit" id="submitBtn">ADD</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="box-edit" style="transform: translateX(-50%); left: 50%">
+      <form id="forms2">
+        <div class="input-box-edit">
+          <button type="reset" id="closeEdit" class="">x</button>
+          <label for="title-edit">Title</label>
+          <input id="title-Edit" type="text" placeholder="Title..." />
+          <label for="description-edit">Description</label>
+          <textarea
+            id="description-edit"
+            cols="30"
+            rows="10"
+            style="resize: none"
+            placeholder="description..."></textarea>
+          <div id="submit">
+            <button
+              type="submit"
+              id="submitBtn-edit"
+              style="
+                width: 6rem;
+                font-size: 1.3rem;
+                margin-top: 3%;
+                margin-bottom: 0;
+                background-color: rgb(93, 120, 172);
+                border-radius: 0.4em;
+                border: 0;
+                height: 3rem;
+              ">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="list"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
